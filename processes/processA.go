@@ -38,9 +38,9 @@ func main() {
 	for { //assign user input to variables and send to server
 		reader := bufio.NewReader(os.Stdin) //read the user input
 
-		fmt.Print(">>To ")
-		inputTo, _ := reader.ReadString('\n')
-		fmt.Fprintf(c, inputTo+"\n")
+		fmt.Print(">>To ") //prompts input
+		inputTo, _ := reader.ReadString('\n') //reads input
+		fmt.Fprintf(c, inputTo+"\n") //formats and sends input to server
 
 		fmt.Print(">>From ")
 		inputFrom, _ := reader.ReadString('\n')
@@ -59,7 +59,7 @@ func main() {
 
 
 		message, _ := bufio.NewReader(c).ReadString('\n') //read server AWK
-		fmt.Print("->: " + message)
+		fmt.Print("->: " + message) //displays AWK
 		return
 	}
 }
