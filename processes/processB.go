@@ -13,15 +13,15 @@ func main() {
 
 	arguments := os.Args //collect cmd line argument
 	if len(arguments) == 1 {
-		fmt.Println("Please provide port number")
+		fmt.Println("Please provide port number") //prompt user input of port 
 		return
 	}
 
 	//open server on port
 	PORT := ":" + arguments[1]
 	l, err := net.Listen("tcp", PORT)
-	if err != nil {
-		fmt.Println(err)
+	if err != nil { //print error if one occurs
+		fmt.Println(err) 
 		return
 	}
 	defer l.Close() //ends process
