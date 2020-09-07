@@ -11,7 +11,7 @@ import (
 //creates tcp client, integrated from linode.com
 func main() {
 
-	arguments := os.Args
+	arguments := os.Args //collect cmd line argument
 	if len(arguments) == 1 {
 		fmt.Println("Please provide port number")
 		return
@@ -44,7 +44,7 @@ func main() {
 		}
 
 		switch i { //depending on iteration, set struct fields to client input
-		case 0: recievedEmail.To = string(netData)
+		case 0: recievedEmail.To = string(netData) 
 		case 1: recievedEmail.From = string(netData)
 		case 2: recievedEmail.Date = string(netData)
 		case 3: recievedEmail.Title = string(netData)
