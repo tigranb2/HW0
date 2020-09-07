@@ -8,13 +8,6 @@ import (
 	"time"
 )
 
-type ProcessA struct {
-	To string
-	From string
-	Date time.Time
-	Title string
-	Content string
-}
 
 //created TCP client, integrated from linode.com
 func main() {
@@ -22,14 +15,14 @@ func main() {
 	//collect cmd line arguments
 	arguments := os.Args
 	if len(arguments) == 1 {
-		fmt.Println("Please provide host:port.")
+		fmt.Println("Please provide host:port.") //prompt user input of ip:port
 		return
 	}
 
 	//connects to specified server
 	CONNECT := arguments[1]
 	c, err := net.Dial("tcp", CONNECT)
-	if err != nil {
+	if err != nil { //print error if one occurs
 		fmt.Println(err)
 		return
 	}
