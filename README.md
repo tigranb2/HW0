@@ -10,6 +10,8 @@
 
 # Citations 
 PKG knowledge and general go knowledge from https://golang.org/
+
 Project design heavily influenced from Darius Russell Kish: https://github.com/Dariusrussellkish/Example-MP-Solution 
+
 TCP Server and Client code integrated from https://www.linode.com/docs/development/go/developing-udp-and-tcp-clients-and-servers-in-go/
 
