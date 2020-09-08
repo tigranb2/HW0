@@ -53,7 +53,7 @@ func main() {
 
 		if i == 4 { //don't know how to have switch case with multiple arguments
 			fmt.Printf("%+v\n", recievedEmail) //%+v adds field names, integrated from golang.org
-			c.Write([]byte("Email Recieved\n")) //AWK
+			c.Write([]byte("Email Recieved\n")) //ACK
 			return
 		}
 	}
