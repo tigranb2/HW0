@@ -51,8 +51,8 @@ func main() {
 		fmt.Fprintf(c, inputContent+"\n")
 
 
-		message, _ := bufio.NewReader(c).ReadString('\n') //read server AWK
-		fmt.Print("->: " + message) //displays AWK
+		message, _ := bufio.NewReader(c).ReadString('\n') //read server ACK
+		fmt.Print("->: " + message) //displays ACK
 		return
 	}
 }
